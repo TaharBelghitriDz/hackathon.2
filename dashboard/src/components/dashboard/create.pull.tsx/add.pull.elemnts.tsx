@@ -25,6 +25,7 @@ export default () => {
 
   const ImageComp = (
     <ImageModal
+      text="add image"
       onClick={(s: string) => {
         setContent((e) => [
           ...e,
@@ -38,6 +39,7 @@ export default () => {
 
   const VideoComponent = (
     <ImageModal
+      text="add video"
       onClick={(s: string) => {
         setContent((e) => [
           ...e,
@@ -50,6 +52,7 @@ export default () => {
   );
   const FileComponent = (
     <ImageModal
+      text="add file"
       onClick={(s: string) => {
         setContent((e) => [
           ...e,

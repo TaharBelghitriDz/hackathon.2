@@ -2,7 +2,7 @@ import { Plus } from "@geist-ui/icons";
 import { Button, Input } from "@nextui-org/react";
 import { useInput } from "../../../lib/hooks";
 
-export default (props: { onClick: (e: string) => void }) => {
+export default (props: { onClick: (e: string) => void; text: string }) => {
   const input = useInput("");
   //   const [imagesList, setImagesList] = useState<Record<number, string>>({
   //     0: "",
@@ -28,7 +28,7 @@ export default (props: { onClick: (e: string) => void }) => {
 
   return (
     <div className="flex flex-col space-y-2">
-      <span className="text-3xl"> add images </span>
+      <span className="text-3xl"> {props.text} </span>
       <div />
       <Input
         className="w-full"
